@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Site</title>
+</head>
+<body>
+    <h1>Welcome to my Demo Site</h1>
+    <p>This is a simple page for demonstrating automated accessibility testing.</p>
+    <a href="#content">Skip to content</a>
+
+    <div id="content">
+        <h2>Accessibility for users with visual impairments</h2>
+        <p style="color: #cccccc; background-color: #ffffff;">"Globally, at least 2.2 billion people have a near or distance vision impairment." - WHO, </p>
+    </div>
+    
+    <!-- Missing Alt Text -->
+    <img src="https://th.bing.com/th/id/OIP.bRgaBkXno0VozNmdEm3aHwHaFa?w=519&h=379&rs=1&pid=ImgDetMain" alt="">
+    
+    <!-- Missing Form Labels -->
+    <form>
+        <input type="text" placeholder="Enter your name">
+        <button type="submit">Submit</button>
+    </form>
+    
+    <!-- Lack of Focus Indicators -->
+    <button style="outline: none;">Button without focus indicator</button>
+    
+</body>
+</html>
