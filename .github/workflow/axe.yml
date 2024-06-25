@@ -1,14 +1,12 @@
 name: Axe
-
 on:
   push:
     branches: [main]
   pull_request:
     branches: [main]
-
 jobs:
   axe:
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
     strategy:
       matrix:
         node-version: [16]
